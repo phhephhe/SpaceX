@@ -33,6 +33,7 @@ header {
 }
 .center-nav ul, .right-nav{
     display: flex;
+    align-items: center;
 }
 .center-nav a, .right-nav a{
     color: white;
@@ -50,8 +51,9 @@ header {
     text-align: right;
     color: white;
 }
-.open-menu img{
-    width: 25px;
+.open-btn img{
+    width: 30px;
+    cursor: pointer;
 }
 .open-right-menu{
     right: 0;
@@ -86,10 +88,21 @@ header {
     font-size: 32px;
     cursor: pointer;
     padding-right: 13px;
-
 }
+/* blur */
+.blur-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    filter: blur(5px);
+  }
+  
 /* sections */
-
 section {
     width: 100%;
     position: relative;
@@ -124,7 +137,6 @@ section {
     font-weight: 100;
     font-style: normal;
     margin: auto;
-
 }
 .section-content h1 {
     font-size: 48px;
