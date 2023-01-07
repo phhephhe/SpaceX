@@ -188,10 +188,15 @@ footer {
     color: #fff;
     text-decoration: none;
   }
-  
   .creator {
     text-align: center;
     padding: 20px;
     font-size: 14px;
   }
-  
+  /* numbers increasing */
+  .numbers {
+    font-size: 150px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
