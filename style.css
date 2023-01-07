@@ -129,7 +129,6 @@ section {
     left: 60px;
     bottom: 15%;
     text-align: left;
-    width: 50%;
     max-width: 520px;
 }
 .section-content h3{
@@ -141,7 +140,6 @@ section {
 .section-content h1 {
     font-size: 48px;
     line-height: 48px;
-    max-width: 90%;
     padding-bottom: 60px;
     font-weight: 600;
 }
@@ -168,7 +166,6 @@ footer {
   }
   
   .footer-section {
-    width: 30%;
     text-align: left;
   }
   
@@ -192,9 +189,9 @@ footer {
     text-decoration: none;
   }
   
-  .copyright {
+  .creator {
     text-align: center;
     padding: 20px;
-    font-size: 12px;
+    font-size: 14px;
   }
   
