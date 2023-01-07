@@ -112,16 +112,16 @@ section {
     background-size: cover;
 }
 .section-a {
-    background-image: url(images/TranporterMission1.jpeg);
+    background-image: url(../images/TranporterMission1.jpeg);
 }
 .section-b {
-    background-image: url(images/StarlinkMission2.jpeg);
+    background-image: url(../images/StarlinkMission2.jpeg);
 }
 .section-c{
-    background-image: url(images/nasa3.webp);
+    background-image: url(../images/nasa3.webp);
 }
 .section-d{
-    background-image: url(images/starship4.webp);
+    background-image: url(../images/starship4.webp);
 }
 /* section-content */
 .section-content{
