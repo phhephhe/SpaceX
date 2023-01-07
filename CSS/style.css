@@ -199,4 +199,19 @@ footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    text-align: left;
+  }
+  .statistics {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .total-text{
+    padding: 14px 0px;
+    font-size: 30px;
+    opacity: 0;
+  }
+  .opacity {
+    transition: all .5s .7s;
+    opacity: 1;
   }

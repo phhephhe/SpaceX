@@ -78,35 +78,27 @@
         </ul>
     </div>
     <div class="blur-overlay" id="blur-overlay"></div>
-    <section class="section-a">
+    <section class="section-a" style="background-image: url(images/falcon-heavy.jpeg); height: 80vh;">
         <div class="section-content">
-            <h3>RECENT LOUNCH</h3>
-            <h1>TRANSPORTER-6 <br>
-                MISSION
-            </h1>
+            <h3>OVER 5 MILLION LBS OF THRUST</h3>
+            <h1>FALCON HEAVY</h1>
             <a href="" class="content-btn">REWATCH</a>
         </div>
     </section>
-    <section class="section-b">
-        <div class="section-content">
-            <h3>RECENT LOUNCH</h3>
-            <h1>STARLINK MISSION</h1>
-            <a href="" class="content-btn">REWATCH</a>
-        </div>
-    </section>
-    <section class="section-c">
-        <div class="section-content">
-            <h1>STARSHIP SELECTED BY NASA TO SUPPORT SUSTAINED LUNAR EXPLORATION
-            </h1>
-            <a href="" class="content-btn">LEARN MORE</a>
-        </div>
-    </section>
-    <section class="section-d">
-        <div class="section-content">
-            <h1>STARSHIP UPDATE</h1>
-            <a href="" class="content-btn">LEARN MORE</a>
-        </div>
-    </section>
+<div class="numbers">
+    <div class="statistics">
+        <span class="launches"></span> 
+        <span class="total-text">TOTAL LAUNCHES</span>
+    </div> 
+    <div class="statistics">
+        <span class="landings">2</span>
+        <span class="total-text">TOTAL LANDINGS</span>
+    </div> 
+    <div class="statistics">
+        <span class="reflights">3</span>
+        <span class="total-text">TOTAL REFLIGHTS</span>
+    </div>       
+</div>
     <footer>
         
         <div class="footer-container">
@@ -139,9 +131,31 @@
             Davit Beridze © 2023
         </div>    
       </footer>
-      
+    <script>
+        //   numbers
+const launches = document.querySelector('.launches');
+const landings = document.querySelector('.landings');
+const reflights = document.querySelector('.reflights');
+const totalText = document.querySelectorAll('.total-text')
+function increaseFast(item,final) {
+    let num = 0;
+    const interval = setInterval(function() {
+      num++;
+      document.querySelector(item).innerHTML = num;
+      totalText.forEach(item => {
+        item.classList.add('opacity')
+      })
+      if (num >= final) {
+        clearInterval(interval);
+      }
+    }, 1);
+  };
 
+increaseFast('.launches',4);
+increaseFast('.landings',9);
+increaseFast('.reflights',4);
+    </script>
+    <script src="Js/falcon.js"></script>
 
-    <script src="Js/app.js"></script>
 </body>
 </html>
