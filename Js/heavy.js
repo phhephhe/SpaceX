@@ -35,7 +35,6 @@ function changeImg() {
     document.slide.src = images[index];
     
     if (index < images.length - 1) {
-        console.log(index, images.length);
         index++;
     }else{
         index = 0;
