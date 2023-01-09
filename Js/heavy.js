@@ -25,12 +25,12 @@ blurOverlay.addEventListener("click", function() {
 let index = 0;
 let images = [];
 
-images[0] = "images/slide1.jpeg"
-images[1] = "images/slide2.jpeg"
-images[2] = "images/slide3.jpeg"
-images[3] = "images/slide4.jpeg"
-images[4] = "images/slide5.jpeg"
-// document.slide.src = 
+images[0] = "./images/slide1.jpeg"
+images[1] = "./images/slide2.jpeg"
+images[2] = "./images/slide3.jpeg"
+images[3] = "./images/slide4.jpeg"
+images[4] = "./images/slide5.jpeg"
+
 function changeImg() {
     document.slide.src = images[index];
     
