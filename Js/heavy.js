@@ -39,7 +39,6 @@ function changeImg() {
     }else{
         index = 0;
     }
-    
     setTimeout(() => {
         changeImg();
     }, 2000);
